@@ -7,6 +7,10 @@
     color: var(--white);
     /* border: 5px solid red; */
 }
+html{
+    padding: 0;
+    margin: 0;
+}
 body{
     
     background-color: black;
@@ -133,7 +137,7 @@ color: var(--mainColor);
     text-align: center;
     margin: 0px;
 
-    line-height: 1;
+    line-height: 0.8;
 }
 .landing .image {
     position: absolute;
@@ -141,7 +145,7 @@ color: var(--mainColor);
 
     left: 50% ;
     transform: translateX(-50%);
-    width: 800px;
+    width: 430px;
     margin: 0px 0px 0px 0px;
         padding: 0px 0px 0px 0px;
 }
