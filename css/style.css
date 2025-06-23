@@ -530,12 +530,15 @@ border-color: var(--black);
     color: var(--black);
 }
 @media (max-width : 768px) {
+  .numbers {
+    padding:150px 15px;
+  }
   .offers {
     padding:150px 15px;
   }
 
-  .about{
-    padding:150px  15px;
+  .about , .projects{
+    padding:150px  10px;
   }
   .about .container .head {
      font-size: 30px;
