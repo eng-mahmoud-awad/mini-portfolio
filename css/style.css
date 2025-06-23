@@ -1,5 +1,7 @@
 html{
     scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
 }
 * {
   box-sizing: border-box;
@@ -58,6 +60,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width:768px) {
+  .header .container ul{
+    display: none;
+  }
+  .header .container button{
+    display: none;
+  }
 }
 .header .container ul li {
   margin: 0 15px;
@@ -124,6 +134,18 @@ body {
   left: 10px;
   top: 35%;
   background-color: var(--mainColor);
+  animation: light 2s infinite alternate ;
+  
+}
+@keyframes light{
+  0% {
+    box-shadow: 0 0 20px 0px var(--mainColor);
+  }50%{
+    box-shadow: 0 0 20px 2px var(--mainColor);
+  }
+  100%{
+    box-shadow: 0 0 20px 4px var(--mainColor);
+  }
 }
 .label:hover::before {
   background-color: var(--white);
@@ -138,9 +160,22 @@ body {
   font-size: 100px;
   width: fit-content;
   text-align: center;
-  margin: 0px;
+  margin: 0px;  
+  /* text-shadow: 0px 3px #9dff4d , 0px 6px var(--mainColor); */
+  
 
-  line-height: 0.8;
+  line-height: 0.9;
+}
+@media (max-width: 768px) {
+  .landing .main-text h1 {
+    font-size: 50px;
+  }
+}
+@media (min-width: 992px) {
+  
+}
+@media (min-width: 1200px) {
+  
 }
 .landing .image {
   position: absolute;
@@ -151,17 +186,29 @@ body {
   width: 430px;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
+  
+}
+@media (max-width:768px){
+  .landing .image{
+    max-width: 300px;
+  }
 }
 .landing .image img {
   display: inline-block;
   vertical-align: middle;
   max-width: 100%;
+  /* filter: drop-shadow(3px 5px 0px  #7c4dff)  drop-shadow(3px 5px 0px var(--mainColor)); */
 }
 .landing .container .left-txt {
   max-width: 400px;
   position: absolute;
   left: 50px;
   bottom: 250px;
+}
+@media (max-width : 768px) {
+  .landing .container .left-txt {
+    bottom: 150px;
+  }
 }
 .landing .container .left-txt p {
   font-size: 12px;
@@ -174,6 +221,8 @@ body {
   padding: 10px;
   border-radius: 30px;
   cursor: pointer;
+  z-index: 10000000000000;
+  position: relative;
 }
  .btn:hover {
   background: #9dff4d;
@@ -211,7 +260,7 @@ body {
 }
 .beni-boxes {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
   margin-top: 150px;
   margin-bottom: 150px;
@@ -258,7 +307,7 @@ margin-top: 50px;
 }
 .projects .projects-boxes {
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
     gap: 20px;
 }
 .projects .projects-boxes .project-box {
@@ -347,10 +396,23 @@ border-color: var(--black);
     color: var(--black);
     font-size: 60px;
 }
+@media (max-width : 768px) {
+  .creative .sections .sec-1 .head {
+     font-size: 30px;
+     max-width: 300px;
+  }
+}
 .creative .sections  {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
 
+}
+@media (max-width : 768px){
+  .creative .sections  {
+    
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+
+}
 }
 .creative .sections .sec-2 .sec-box   {
     border-bottom: 1px solid var(--black);
@@ -374,11 +436,17 @@ border-color: var(--black);
     max-width: 500px;
     font-size: 45px;
 }
+@media (max-width : 768px) {
+  .offers .head {
+     font-size: 30px;
+     max-width: 300px;
+  }
+}
 .offers .offers-boxes {
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
     gap: 20px;
-    grid-template-rows: 500px;
+    /* grid-template-rows: 550px; */
 
 }
 .offers .offers-boxes .offers-box {
@@ -461,6 +529,22 @@ border-color: var(--black);
 .about .container .head{
     color: var(--black);
 }
+@media (max-width : 768px) {
+  .offers {
+    padding:150px 15px;
+  }
+
+  .about{
+    padding:150px  15px;
+  }
+  .about .container .head {
+     font-size: 30px;
+     max-width: 300px;
+  }
+  .about .container{
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  }
+}
 .about .container p{
     color: var(--black);
 }
@@ -511,7 +595,7 @@ border-color: var(--black);
 }
 .numbers .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px , 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px , 1fr));
     gap: 45px;
 }
 .numbers .container h1 {
@@ -557,4 +641,15 @@ border-color: var(--black);
     font-size: 30px;
     color: var(--mainColor);
 }
+@media (max-width: 768px) {
+  .contact .container .contact-box h1 {
+    font-size: 25px;
+    max-width: 350px;
+  }
+  .contact .container .label {
+    font-size: 12px;
+    border-radius: 50px;
+  }
+}
+
 /* end contact  */
