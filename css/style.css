@@ -19,6 +19,9 @@ html {
 body {
   background-color: #111111;
 }
+::selection{
+  background-color: var(--mainColor);
+}
 :root {
   --mainColor: #82ff1f;
   --white: white;
@@ -292,6 +295,11 @@ body {
   border-radius: 50%;
   font-size: 30px;
 }
+@media (max-width:768px) {
+  .beni-boxes .box {
+    max-width: 270px;
+  }
+}
 
 /*end work with me */
 /*start projects */
@@ -302,9 +310,7 @@ body {
 .projects .label {
 margin-top: 50px;
 }
-.projects .head {
 
-}
 .projects .projects-boxes {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
@@ -530,8 +536,12 @@ border-color: var(--black);
     color: var(--black);
 }
 @media (max-width : 768px) {
-  .numbers {
+  .numbers  {
     padding:150px 15px;
+    
+  }
+  .num-box {
+    max-width: 250px;
   }
   .offers {
     padding:150px 15px;
@@ -585,9 +595,7 @@ border-color: var(--black);
    
     border: 2px solid  transparent;
 }
-.about .container .myimg{
-    
-}
+
 .about .container .myimg img {max-width: 100%; border-radius: 20px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;}
 /* end About */
@@ -646,13 +654,19 @@ border-color: var(--black);
 }
 @media (max-width: 768px) {
   .contact .container .contact-box h1 {
-    font-size: 25px;
-    max-width: 350px;
+    font-size: 15px;
+    max-width: 300px;
+  }.contact{
+    padding: 70px 20px;
+  }
+  .contact .container .contact-box{
+    padding: 20px;
   }
   .contact .container .label {
     font-size: 12px;
     border-radius: 50px;
   }
 }
+
 
 /* end contact  */
