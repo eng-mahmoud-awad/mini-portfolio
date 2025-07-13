@@ -21,16 +21,19 @@
         <div class="image">
           <img src="./images/my-new-logo.png" alt="logo" />
         </div>
+        
         <ul>
-          <li><a href="#">Home</a></li>
+          <i class="fa-solid fa-xmark"></i>
+          <li><a href="#Home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#services">Services</a></li>
+          <li><a href="#offers">Services</a></li>
+          <li><a class="ct" href="#contact">Contact me</a></li>
         </ul>
-        <button>Contact me</button>
+        <i class="fa-solid fa-list-ul list"></i>
       </div>
     </div>
-    <div class="landing ">
+    <div class="landing" id="Home" >
       <div class="overlay"></div>
       <div class="container">
         <div class="main-text">
@@ -47,7 +50,7 @@
         </div>
       </div>
     </div>
-    <div class="workWithMe">
+    <div class="workWithMe " id="features">
       <div class="container">
       <span class="label">Available for work</span>
       <h1 class="head fadeInLeft wow">Why work with me </h1>
@@ -70,7 +73,7 @@
       </div>
     </div>
     </div>
-    <div class="projects">
+    <div class="projects" id="projects">
       <div class="container">
       <span class="label">SELECTED WORK</span>
       <h1 class="head fadeInLeft wow">My Projects</h1>
@@ -171,7 +174,7 @@
     </div>
     </div>
     <!-- start creative flow  -->
-     <div class="creative">
+     <div class="creative" id="creative">
       <div class="container">
         <div class="sections">
           <div class="sec-1 fadeInLeft wow">
@@ -202,7 +205,7 @@
      </div>
     <!-- end creative flow  -->
      <!-- start offers -->
-      <div class="offers">
+      <div class="offers" id="offers">
         <div class="container">
           <span class="label">WHAT I OFFER</span>
           <h1 class="head fadeInLeft wow">
@@ -250,7 +253,7 @@
       </div>
      <!-- end offers -->
       <!-- start about -->
-       <div class="about">
+       <div class="about" id="about">
         <div class="container">
           <div class="myimg"><img src="./images/me-full.png" alt="" class="fadeInLeft wow"></div>
           <div class="info fadeInRight wow">
@@ -301,26 +304,27 @@
         </div>
        <!-- end numbers -->
         <!-- start reviews -->
-         <div class="reviews">
+         <!-- <div class="reviews">
           <div class="container">
             <span class="label">REVIEWS</span>
           </div>
-         </div>
+         </div> -->
         <!-- end reviews -->
          <!-- start contact -->
-          <div class="contact">
+          <div class="contact" id="contact">
             <div class="container">
               <div class="contact-box">
                 <span class="label">HAVE PROJECT IN MIND ?</span>
                 <h1 class="fadeInDown  wow">Let’s Turn your Ideas
                   into Reality</h1>
-                  <a  href="mailto:mahmoud.awad.mo1@gmail.com" class="fadeInUp wow">Email Me</a>
+                  <a  href="https://linktr.ee/mahmoud.awad1" target="_blank" class="fadeInUp wow">Contact with Me</a>
               </div>
             </div>
           </div>
          <!-- end contact -->
   </body>
          <script src="./js/wow.min.js"></script>
+         <script src="./js/main.js"></script>
          <script>
          new WOW().init();
          </script>
