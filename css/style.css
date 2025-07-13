@@ -645,15 +645,15 @@ border-color: var(--black);
 }
 .about .container .icons a  {
     text-decoration: none;
-    margin-right: 15px;
+    margin-right: 10px;
     border-radius: 50%;
     /* padding: 20px; */
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 20px;
     color: var(--white);
     background-color: var(--black);
     text-align: center;
