@@ -12,6 +12,9 @@ html{
   color: var(--white);
   /* border: 5px solid red; */
 }
+a{
+  text-decoration: none;
+}
 html {
   padding: 0;
   margin: 0;
@@ -297,7 +300,7 @@ display: flex;
   padding: 10px;
   border-radius: 30px;
   cursor: pointer;
-  z-index: 20;
+  z-index: 150;
   position: relative;
 }
  .btn:hover {
@@ -724,6 +727,7 @@ border-color: var(--black);
 .contact .container .contact-box a {
     font-size: 30px;
     color: var(--mainColor);
+    text-decoration:underline;
 }
 @media (max-width: 768px) {
   .contact .container .contact-box h1 {
@@ -743,3 +747,23 @@ border-color: var(--black);
 
 
 /* end contact  */
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 160px;
+}
+.btn i {
+  font-size: 20px ;
+  color: var(--black);
+  animation: upAnddown 0.6s infinite alternate;
+  z-index: 500000000000000000000000000000000;
+}
+@keyframes upAnddown {
+  0%{
+    transform: translateY(0);
+  }100%{
+    transform: translateY(5px);
+  }
+}
