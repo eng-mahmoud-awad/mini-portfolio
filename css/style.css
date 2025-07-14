@@ -118,7 +118,7 @@ body {
     /* display: none; */
     transform: translateX(-400%);
     
-    transition: 0.9s;
+    transition: 0.6s ;
     position: fixed;
         
         height: 100%;
