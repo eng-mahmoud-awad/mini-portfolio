@@ -116,7 +116,7 @@ body {
  @media (max-width:768px) {
   .header .container ul{
     /* display: none; */
-    transform: translateX(-100%);
+    transform: translateX(-300%);
     
     transition: 0.9s;
     position: fixed;
